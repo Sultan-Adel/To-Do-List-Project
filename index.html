@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-center align-items-center m-5">
+        <div class="col-6">
+          <form class="d-flex justify-content-center align-items-center flex-column">
+            <h1 class="text-center mb-3">To Do List</h1>
+            <input oninput="searchData()" id="search" class="form-control mb-3" type="search" placeholder="Search To Do" aria-label="Search" />
+            <div id="rowData" class="w-100 mt-3"></div>
+            <h2 class="text-center mb-3">Add a new todo...</h2>
+            <input id="data" type="text" class="form-control mb-3" placeholder="Enter Your Task" />
+            <div id="msgData" class="text-danger d-none">Must be 3–30 letters or numbers</div>
+            <div>
+              <button onclick="addProduct()" id="Submit" type="button" class="btn mt-3">Submit</button>
+              <button onclick="upDateProduct()" id="UpDate" type="button" class="btn mt-3 d-none UpDate">UpDate</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
